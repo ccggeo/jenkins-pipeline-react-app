@@ -1,10 +1,10 @@
 pipeline {
   agent none
-  stages {
-    stage ('Initialize') {
-      steps {
-        echo 'Placeholder.'
-      }
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install' 
+            }
+        }
     }
-  }
 }
