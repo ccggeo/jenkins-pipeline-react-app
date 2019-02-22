@@ -1,5 +1,5 @@
 pipeline {
-	node('master') 
+	agent any	
 		environment {
 			CI = 'true'
 		}
