@@ -33,4 +33,11 @@ node {
             app.push("latest")
         }
     }
+
+    stage('Run Tests') {
+        docker.image('wqsttfuhinezwgscvibvxif/react-ui:latest').inside {
+        git status
+        }
+
+    }
 }
