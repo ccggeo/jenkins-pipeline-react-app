@@ -36,7 +36,7 @@ node {
 
     stage('Run Tests') {
         docker.image('wqsttfuhinezwgscvibvxif/react-ui:latest').inside {
-        git status
+        sh 'ls'
         }
 
     }
